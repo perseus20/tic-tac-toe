@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --font-family: 'Roboto', sans-serif;
+  --font-family-game-name: 'Handlee', cursive;
+  --font-family-header: 'Handlee', cursive;
+  --font-size: 1.25rem;
+  --font-size-game-name: 3rem;
+  --font-size-header: 1.5rem;
+
+  /* COLOR */
+  --background-color: #118ab2;
+  --backround-color-header: #ffd166;
+  --text-shadow-game-name: 2px 2px #ff0000;
+  --text-shadow-header: 1px 1px #ffffff;
+
+  /* BORDER */
+  --box-shadow-header: 0 1px 10px #000000;
+
+  /* Size */
+  --padding: 1.25rem;
+  --padding-header: 1rem 3rem;
+  --gap-header: 10px;
+}
+
+/* GENERAL STYLE */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.header {
+  background-color: var(--backround-color-header);
+  padding: var(--padding-header);
+  box-shadow: var(--box-shadow-header);
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.game-name {
+  font-family: var(--font-family-game-name);
+  font-weight: bold;
+  font-size: var(--font-size-game-name);
+  text-shadow: var(--text-shadow-game-name);
+  white-space: nowrap;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.odin {
+  justify-self: end;
+}
+
+.header__text {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-header);
+  font-weight: bold;
+  text-shadow: var(--text-shadow-header);
+}
