@@ -16,11 +16,11 @@
   --font-family-header: 'Handlee', cursive;
   --font-size: 1.25rem;
   --font-size-game-name: 3rem;
-  --font-size-header: 1.5rem;
+  --font-size-header: 2rem;
 
   /* COLOR */
   --background-color: #118ab2;
-  --backround-color-header: #ffd166;
+  --backround-color-header: rgba(255, 209, 102, 0.1);
   --text-shadow-game-name: 2px 2px #ff0000;
   --text-shadow-header: 1px 1px #ffffff;
 
@@ -75,4 +75,5 @@ body {
   font-size: var(--font-size-header);
   font-weight: bold;
   text-shadow: var(--text-shadow-header);
+  /* text-transform: uppercase; */
 }
