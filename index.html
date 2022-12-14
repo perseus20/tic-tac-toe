@@ -16,6 +16,47 @@
         <div class="game-name">Tic Tac Toe</div>
         <div class="odin header__text">Odin</div>
       </header>
+
+      <div class="start">
+        <form action="">
+          <div class="start__heading">Welcome to the game</div>
+          <div class="game-mode">Game mode: 2 player</div>
+          <div class="choose-name">
+            <label for="player1">Player1 name:</label>
+            <input type="text" name="player1" id="player1" required />
+          </div>
+          <div class="choose-name">
+            <label for="player2">Player2 name:</label>
+            <input type="text" name="player2" id="player2" required />
+          </div>
+          <button class="btn" type="submit">Start</button>
+        </form>
+      </div>
+
+      <div class="game-play">
+        <div class="turn">Player1 turn</div>
+        <div class="grid-container">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
     </div>
+    <dialog class="modal">
+      <div class="winner">
+        The winner is Player1
+        <span style="white-space: nowrap">🥳 🥳 🥳</span>
+      </div>
+      <div class="nav">
+        <button class="home nav__btn">Home</button>
+        <button class="again nav__btn">Play Again</button>
+      </div>
+    </dialog>
   </body>
 </html>
